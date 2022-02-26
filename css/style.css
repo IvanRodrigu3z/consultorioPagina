@@ -2,6 +2,7 @@ body{
     background-color: #d0a173;
     font-family: 'Montserrat', sans-serif;
 }
+/* encabezado */
 header{
     height: 100vh;
     background-attachment: fixed;
