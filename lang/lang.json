@@ -1,0 +1,35 @@
+{
+    "es":{
+        "lang-es" : "español",
+        "lang-en" : "ingles",
+        "text1" : "Resolvemos sus problemas de manera facil y efectiva, realice su consulta via whatsapp",
+        "logo" : "hechizos y brujeria",
+        "home" :"Inicio",
+        "about" : "sobre nosotros",
+        "service" : "servicios",
+        "testimony" : "testimonios",
+        "policy" : "politicas",
+        "contact" : "contacto",
+        "title" : "hechizos para el amor y la prosperidad",
+        "subtitle" : "¿Estas sufriendo por amor? ¿quieres que esa persona retorne en tus brazos? ¿suvida amorosa no es prospera? no lo piense más y pongase en contacto con nosotros y lo ayudaremos",
+        "contact-us" : "¡contactenos!"
+    },
+
+    "en":{
+        "lang-es" : "espanish",
+        "lang-en" : "english",
+        "text1" : "We solve your problems easily and effectively, make your query via WhatsApp",
+        "logo" : "spells and witchcraft",
+        "home" :"home",
+        "about" : "about us",
+        "service" : "services",
+        "testimony" : "testimony",
+        "policy" : "policy",
+        "contact" : "contact",
+        "title" : "spells for love and prosperity",
+        "subtitle" : "Are you suffering for love? Do you want that person to return in your arms? Is your love life not prosperous? do not think about it anymore and contact us and we will help you",
+        "contact-us" : "¡contact us!"
+
+    }
+
+}

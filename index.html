@@ -5,41 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amarres para </title>
+    <title>Amarres</title>
     <link rel="icon" href="img/iconos/logo.ico">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- estilos css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    
+
+    <!-- fuente de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header id="inicio">
-        <nav class="nabvar">
-            <div>
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- cambio de idioma -->
+        <div class="row justify-content-end">
+            <div class="col-9">
+                <p class="m-0 small translate" key="text1">Resolvemos sus problemas de manera facil y efectiva, realice su consulta via
+                    whatsapp</p>
+            </div>
+            <div class="col-2">
+                <label for="lang"><i class="fa-solid fa-globe"></i></label>
+                <select id="lang" class="bg-transparent border-0">
+                    <option value="en" id="en" class="translate  text-capitalize" key="lang-en">Ingles</option>
+                    <option value="es" id="es" class="translate text-capitalize" key="lang-es">Español</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- menu de navegacion -->
+        <nav class="navbar bg-nav">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="img/menu.png" alt="menu" width="20px">
                 </button> -->
-                <ul class="nav justify-content-end p-5 text-uppercase" id="menu">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#maestro">sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonios">testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">contacto</a></li>
-                </ul>
-            </div>
+            <a href="/" class="navbar-brand mx-5 text-uppercase text-white logo translate" key="logo"><b>hechizos y brujeria</b></a>
+            <ul class="nav justify-content-end p-5 text-uppercase text-white" id="menu">
+                <li class="nav-item"><a class="nav-link translate text-white" href="#inicio" key="home">inicio</a></li>
+                <li class="nav-item"><a class="nav-link translate text-white" href="#maestro" key="about">sobre nosotros</a></li>
+                <li class="nav-item"><a class="nav-link translate text-white" href="#servicios" key="service">servicios</a></li>
+                <li class="nav-item"><a class="nav-link translate text-white" href="#testimonios" key="testimony">testimonios</a></li>
+                <li class="nav-item"><a class="nav-link translate text-white" data-bs-toggle="modal" data-bs-target="#policy" key="policy">politicas</a></li>
+                <li class="nav-item"><a class="nav-link translate text-orange" href="#contacto" key="contact">contacto</a></li>
+            </ul>
         </nav>
         <div class="row text-center p-5 justify-content-center align-items-center ">
             <div class="col-12 col-md-6">
-                <h1 class="text-uppercase">hechizos para el amor y la prosperidad</h1>
-                <p class="text-yellow">¿Estas sufriendo por amor? ¿quieres que esa persona retorne en tus brazos? ¿su
+                <h1 class="text-uppercase text-white translate" key="title">hechizos para el amor y la prosperidad</h1>
+                <p class="text-yellow translate" key="subtitle">¿Estas sufriendo por amor? ¿quieres que esa persona retorne en tus brazos? ¿su
                     vida amorosa no es
                     prospera? no lo piense más y pongase en contacto con nosotros y lo ayudaremos</p>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <a class="btn"
+                    <a class="btn translate" key="contact-us"
                         href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
                         target="_blank">¡Contactenos!</a>
                 </div>
@@ -172,6 +194,12 @@
                 sitio web, nunca se mostraran conversaciones que no hayan sido autorizadas.
             </span>
         </section>
+
+        <section class="decoro">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, molestiae commodi animi dicta dolores alias dolorem vero voluptatibus facilis. Aliquid quam officiis commodi deserunt aperiam labore minus quia expedita dolor!
+            </p>
+        </section>
         <!-- contacto -->
         <section id="contacto" class="row p-5">
             <div class="contact text-center col-12">
@@ -189,7 +217,36 @@
 
     </div>
 
-    <!-- boton flotante -->
+    <!-- ventana modal de politicas de datos-->
+    <div class="modal fade" id="policy" tabindex="-1" aria-labelledby="policyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Politicas y condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi consequatur praesentium, laborum sequi harum ratione, possimus eveniet ipsam voluptates molestias veniam ipsa? Distinctio beatae facilis et consectetur! Quas, alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure aperiam modi non explicabo quo perspiciatis, ex laborum aliquid maxime molestias earum odit, nostrum tempore sunt, porro hic maiores nemo!</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div>
+                                <i class="fa-thin fa-address-book"></i>
+                            </div>
+                            <h3>uso de datos</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum obcaecati facere suscipit itaque amet aperiam tempore deserunt dignissimos porro? Aut, nisi nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid veniam consequatur dolore, nisi magni quo tempora tenetur exercitationem eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sunt expedita fugiat illo nam iste placeat harum maxime reprehenderit necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- boton flotante de whatsapp-->
     <div>
         <a class="btn-flotante"
             href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola maestro, quiero realizar una consulta"
@@ -199,13 +256,18 @@
     <footer class="text-center row align-items-center m-5">
         <div class="col">
             <span>Todos los derechos reservados &copy;2022 </span>
-            <a href="">politicas de privacidad</a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#policy">
+                politicas de datos
+            </a>
         </div>
     </footer>
 
     <!-- scripts bootstrap -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/translate.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 
 </html>

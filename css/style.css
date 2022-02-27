@@ -2,6 +2,7 @@ body{
     background-color: #d0a173;
     font-family: 'Montserrat', sans-serif;
 }
+
 /* encabezado */
 header{
     height: 100vh;
@@ -15,15 +16,13 @@ header{
 header h1{
     font-family: 'Playfair Display SC', serif;
 }
-header h1, a{
-    color: #fff !important;
+
+ul li a.text-white:hover{
+    color: #b9bdbd !important;
 }
 
-nav ul li a:hover{
-    color: #949999 !important;
-}
-.text-yellow{
-    color: #ebf3d7;
+ul li a.text-orange:hover{
+    color: #ffc340 !important;
 }
 
 header .btn{
@@ -44,11 +43,17 @@ header .btn:hover{
     z-index: 99;
 }
 
+/* backgorunds */
+.bg-gray{
+    background-image: url(../img/bg-container.jpg);
+}
+
 .bg-yellow{
     background-color: #ffc340;
 }
-.bg-gray{
-    background-image: url(../img/bg-container.jpg);
+
+.bg-nav{
+    background-color: rgba(0,0,0,0.5);
 }
 
 .bg-img-dark{
@@ -65,6 +70,7 @@ header .btn:hover{
     padding: 60px;
 }
 
+/* boton flotante */
 .btn-flotante img{
     width: 50px;
 }
@@ -82,6 +88,14 @@ header .btn:hover{
     }
 }
 
+.parrafo{
+    text-align: center;
+}
+
+.decoro{
+    font-family: 'Roboto Serif', sans-serif;
+}
+
 footer a{
     color: #d0a173;
 }
@@ -90,6 +104,12 @@ footer{
     height: 8em;
 }
 
-.parrafo{
-    text-align: center;
+/* general */
+.text-yellow{
+    color: #ebf3d7;
 }
+
+.text-orange{
+    color: #ff9800 !important;
+}
+
