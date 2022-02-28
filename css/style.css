@@ -1,6 +1,8 @@
 body{
     background-color: #d0a173;
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /* encabezado */
@@ -93,17 +95,29 @@ header .btn:hover{
 }
 
 .decoro{
-    font-family: 'Roboto Serif', sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 40px;
 }
 
-footer a{
-    color: #d0a173;
+.message{
+    background-image: url(../img/bg-relleno.jpg);
+    height: 200px;
+    margin-bottom: 5em;
 }
+
 
 footer{
     height: 8em;
 }
 
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ffc340 !important;
+}
 /* general */
 .text-yellow{
     color: #ebf3d7;
