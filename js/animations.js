@@ -18,7 +18,7 @@ $(window).scroll(function(){ //para mostrar foto de los maestros
     var scrollActual = $(document).scrollTop();
     if(scrollActual > 100){
         $('.img-master').show(1000);
-    }else if(scrollActual < 500){
+    }else{
         $('.img-master').hide();
     }
 });
