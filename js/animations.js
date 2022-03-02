@@ -1,5 +1,5 @@
-$(document).ready(function() { //rediraccionar al contenido meciante en menú
-    $('a[href^="#"]').click(function() {
+$(document).ready(function() { 
+    $('a[href^="#"]').click(function() {//rediraccionar al contenido meciante en menú
       let destino = $(this.hash);
       if (destino.length == 0) {
         destino = $('a[name="' + this.hash.substr(1) + '"]');
@@ -10,6 +10,7 @@ $(document).ready(function() { //rediraccionar al contenido meciante en menú
       $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
       return false;
     });
+
 });
 
 
@@ -36,11 +37,11 @@ $(window).scroll(function(){ //para mostrar foto de los maestros
     }
 });
 
-$(window).scroll(function(){ //para mostrar servicios
+$(window).scroll(function(){ //desliza mensaje 1
     var scrollActual = $(document).scrollTop();
-    var scrollService = parseInt($('.ultimo').offset().top);
-    console.log("ultimo", scrollService, "scroll actual", scrollActual);
-    if(scrollActual > scrollService){
+    var start = parseInt($('.ultimo').offset().top);
+    console.log("ultimo", start, "scroll actual", scrollActual);
+    if(scrollActual > start){
         $('.message').animate({width: '100%'}, 400);
     } else{
         $('.message').width('50%');
