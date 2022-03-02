@@ -1,5 +1,4 @@
 body{
-    background-color: #d0a173;
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
@@ -15,7 +14,7 @@ header{
     background-image: url(../img/bg-inicio.jpg);
 }
 
-header h1{
+.font-playfair{
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -61,11 +60,15 @@ header .btn:hover{
 }
 
 .bg-nav{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .bg-footer{
-    background-color: rgba(0,0,0,0.1);
+    background-color: #000;
+}
+
+.bg-salmon{
+    background-color: #082032;
 }
 
 .service{
@@ -82,7 +85,7 @@ header .btn:hover{
     height: 200px;
     object-fit: cover;
     background-size: cover;
-    background-image: url(../img/servicios/velas.jpg);
+    background-image: url(../img/servicios/limpieza.jpg);
     display: flex;
     align-items: center;
 }
@@ -91,26 +94,29 @@ header .btn:hover{
     height: 200px;
     object-fit: cover;
     background-size: cover;
-    background-image: url(../img/servicios/magia.jpg);
+    background-image: url(../img/servicios/brujeria.jpg);
     display: flex;
     align-items: center;
 }
 
 .service-title{
-    background-color:rgba(191, 228, 60, 0.5);
+    background-color:rgba(12, 12, 11, 0.5);
     width: 100%;
     padding: 1em;
 }
 
 .service-text{
-    background-color: #2b2a29;
     padding:0 20px;
-    color: #fff;
+    color: #000;
 }
 
-.contact{
-    background-color: #c3c7c7;
-    
+.bg-contact{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/bg-contact.jpg);
+    width: 100%;
+    height: 25em;
 }
 
 /* boton flotante */
@@ -140,13 +146,11 @@ header .btn:hover{
 
 .message{
     background-image: url(../img/bg-relleno.jpg);
-    height: 30%;
+    height: 20em;
     margin-bottom: 5em;
-}
-
-
-footer{
-    height: 8em;
+    display: flex;
+    align-items: center;
+    width: 10%;
 }
 
 footer a{
@@ -167,9 +171,19 @@ footer a:hover{
 }
 
 .text-gray{
-    color: #cecfcf !important;
+    color: #b8b9b9 !important;
 }
 
-#contacto{
-    padding: 0;
+.btn-up{
+    background-color: #353636;
+    color: #fff;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 1em !important;
 }

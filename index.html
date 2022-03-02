@@ -24,17 +24,17 @@
 <body>
     <header id="inicio">
         <!-- cambio de idioma -->
-        <div class="container">
+        <div class="container ">
             <div class="row justify-content-end">
-                <div class="col-12 col-md-9">
-                    <p class="m-0 small translate text-gray" key="text1">Resolvemos sus problemas de manera facil y
+                <div class="col-10 col-md-9">
+                    <p class="m-0 translate text-gray small" key="text1">Resolvemos sus problemas de manera facil y
                         efectiva, realice su consulta via
                         whatsapp
                     </p>
                 </div>
                 <div class="col-12 col-md-3 text-gray">
                     <label for="lang"><i class="fa-solid fa-globe"></i></label>
-                    <select id="lang" class="bg-transparent border-0 text-gray text-capitalize">
+                    <select id="lang" class="bg-transparent border-0 text-gray text-capitalize small w-auto">
                         <option value="en" id="en" class="translate  text-capitalize" key="lang-en">Ingles</option>
                         <option value="es" id="es" class="translate text-capitalize" key="lang-es">Español</option>
                     </select>
@@ -43,20 +43,18 @@
         </div>
 
         <!-- menu de navegacion -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-nav p-5">
-            <a href="/" class="navbar-brand text-uppercase text-white logo translate" key="logo"><b>hechizos y
-                    brujeria</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-nav p-5">
+            <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
                 aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-gray bars-icon"></i>
             </button>
-            <div class="collapse navbar-collapse " id="menuNavegacion">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase text-white" id="menu">
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-2 mb-2 text-uppercase text-white" id="menu">
                     <li class="nav-item"><a class="nav-link translate text-white" href="#inicio" key="home">inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#maestro" key="about">sobre
+                    <li class="nav-item"><a class="nav-link translate text-white" href="#masters" key="about">sobre
                             nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#servicios"
+                    <li class="nav-item"><a class="nav-link translate text-white" href="#services"
                             key="service">servicios</a></li>
                     <li class="nav-item"><a class="nav-link translate text-white" href="#testimonios"
                             key="testimony">testimonios</a></li>
@@ -70,13 +68,14 @@
 
         <div class="row text-center py-5 justify-content-center align-items-center m-0">
             <div class="col-12 col-md-6">
-                <h1 class="text-uppercase text-white translate" key="title">hechizos para el amor y la prosperidad</h1>
+                <h1 class="text-uppercase text-white font-playfair translate" key="title">hechizos para el amor y la
+                    prosperidad</h1>
                 <p class="text-yellow translate" key="subtitle">¿Estas sufriendo por amor? ¿quieres que esa persona
                     retorne en tus brazos? ¿suvida amorosa no es prospera? no lo piense más y pongase en contacto con
                     nosotros y lo ayudaremos</p>
             </div>
             <div class="w-100"></div>
-            <div class="d-grid gap-2 col-3 mt-3">
+            <div class="col-6 col-md-4 col-lg-3 d-grid gap-2 mt-3">
                 <a class="btn translate" key="contact-us"
                     href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
                     target="_blank">¡Contactenos!</a>
@@ -84,9 +83,9 @@
         </div>
     </header>
 
-    <div class="bg-gray mb-5 container-fluid p-0 m-0">
+    <div class="bg-gray container-fluid p-0">
         <!-- sobre los maestros -->
-        <section id="maestro" class="py-5 container">
+        <section id="masters" class="py-5 container">
             <h3 class="text-center pb-5 m-0 text-uppercase">sobre nuestros maestros</h3>
             <div class="row mb-5 justify-content-around text-center">
                 <div class="col-12 col-md-6 col-lg-4 p-5">
@@ -123,7 +122,7 @@
                         </div>
                     </div>
                     <h4>Josue Gonzales del Quebrado</h4>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur, odit
+                    <p class="text-justify ultimo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur, odit
                         officia culpa officiis minus iusto atque omnis blanditiis voluptatibus? Officia, non qui! Lorem
                         ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloribus. Lorem ipsum</p>
                     <span>Realiza ahora mismo tu consulta</span>
@@ -132,102 +131,128 @@
         </section>
 
         <!-- message 1 -->
-        <section id="message" class="container text-white message p-5">
+        <section id="message" class="container-fluid text-white message p-5 m-0">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h3>brujos en linea, expertos en magia blanca para recuperar ese ser amado</h3>
+                <div class="col-12 col-md-6 text-uppercase">
+                    <h3 class="fs-2 text-message">brujos en linea, expertos en magia blanca para recuperar ese ser amado</h3>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p>Somos maestros esoteristas, chamanes, tarotistas y santeros con años de experiencia resolviendo
+                <div class="col-12 col-md-6 align-self-center">
+                    <p class="m-0">Somos maestros esoteristas, chamanes, tarotistas y santeros con años de experiencia resolviendo
                         los problemas de nuestros pacientes. Realiza tu consulta via WhatsApp ahora mismo!</p>
                 </div>
             </div>
         </section>
 
         <!-- servicios -->
-        <section id="servicios" class="row bg-yellow py-5 justify-content-around container-fluid">
-            <h3 class="text-center pb-5 text-uppercase">Servicios</h3>
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="service">
-                    <h4 class="service-title text-white">Amarres</h4>
+        <section id="services" class="bg-yellow container-fluid ">
+            <h3 class="text-center py-5 m-0 text-uppercase ">Servicios</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-5 text-center p-5">
+                    <div class="service rounded">
+                        <h4 class="service-title text-white">Amarres</h4>
+                    </div>
+                    <div class="service-text text-lead">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
+                            nam sint quasi iusto sapiente
+                            saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
+                        </p>
+                    </div>
                 </div>
-                <div class="service-text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
-                        nam sint quasi iusto sapiente
-                        saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
-                    </p>
+                <div class="col-12 col-md-5 col-lg-5 text-center p-5">
+                    <div class="service">
+                        <h4 class="service-title text-white">limpiesas</h4>
+                    </div>
+                    <div class="service-text">
+                        <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
+                            nam sint quasi iusto sapiente
+                            saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="service2">
-                    <h4 class="service-title text-white">limpiesas</h4>
+                <div class="col-12 col-md-5 col-lg-5 text-center p-5">
+                    <div class="service2">
+                        <h4 class="service-title text-white">limpiesas</h4>
+                    </div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
+                            nam sint quasi iusto sapiente
+                            saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
+                        </p>
+                    </div>
                 </div>
-                <div class="service-text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
-                        nam sint quasi iusto sapiente
-                        saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="service3">
-                    <h4 class="service-title text-white">Brujeria</h4>
-                </div>
-                <div class="service-text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
-                        nam sint quasi iusto sapiente
-                        saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
-                    </p>
+                <div class="col-12 col-md-5 col-lg-5 text-center p-5">
+                    <div class="service3">
+                        <h4 class="service-title text-white">Brujeria</h4>
+                    </div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ab nihil
+                            nam sint quasi iusto sapiente
+                            saepe incidunt laboriosam, debitis odit laborum assumenda non dolorem esse! In rerum itaque
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- testimonios -->
-        <section id="testimonios" class="row justify-content-center m-0 p-0">
-            <h3 class="text-center text-uppercase">Testimonios</h3>
-            <p class="mb-5">
+        <section id="testimonios" class="container-fluid p-5 bg-dark text-white">
+            <h3 class="text-center text-uppercase pb-5 m-0">Testimonios</h3>
+
+            <p class="pt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime autem aperiam. Voluptatem
                 voluptatibus esse similique eaque deserunt quae eos consectetur. Sed hic voluptatem est suscipit quasi
                 laboriosam amet perspiciatis!
             </p>
-            <div class="col-3">
-                <img class="img-fluid shadow" src="img/testimonios/testimonio.jpg" alt="testimonio">
+            <div class="row p-5 justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <img class="img-fluid shadow rounded" src="img/testimonios/testimonio.jpg" alt="testimonio">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <img class="img-fluid shadow rounded" src="img/testimonios/testimonio.jpg" alt="testimonio">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <img class="img-fluid shadow rounded" src="img/testimonios/testimonio.jpg" alt="testimonio">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img class="img-fluid shadow rounded" src="img/testimonios/testimonio.jpg" alt="testimonio">
+                </div>
             </div>
-            <div class="col-3">
-                <img class="img-fluid shadow" src="img/testimonios/testimonio.jpg" alt="testimonio">
-            </div>
-            <div class="col-3">
-                <img class="img-fluid shadow" src="img/testimonios/testimonio.jpg" alt="testimonio">
-            </div>
-            <div class="col-3">
-                <img class="img-fluid shadow" src="img/testimonios/testimonio.jpg" alt="testimonio">
-            </div>
-            <span class="small p-0">
-                Los testimonos mostrados anteriormente fueron autorizados por cada persona para ser visualizados en este
-                sitio web, nunca se mostraran conversaciones que no hayan sido autorizadas.
-            </span>
         </section>
 
-        <section class="decoro row justify-content-center m-0">
-            <div class="col-6 text-center">
-                <p class="p-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, molestiae commodi animi dicta
-                    dolores alias dolorem vero voluptatibus facilis. Aliquid quam officiis commodi deserunt aperiam
-                    labore minus quia expedita dolor!
-                </p>
+        <!-- texto 2 -->
+        <section class="container-fluid decoro py-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6 text-center">
+                    <p class="p-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, molestiae commodi animi dicta
+                        dolores alias dolorem vero voluptatibus facilis. Aliquid quam officiis commodi deserunt aperiam
+                        labore minus quia expedita dolor!
+                    </p>
+                </div>
             </div>
         </section>
+
         <!-- contacto -->
-        <section id="contacto" class="">
-            <div class="contact text-center col-12">
-                <h3 class="text-center mb-3 text-uppercase">Contacto</h3>
-                <p>No importa en que ciudad o región te encuentres, estoy dispuesto a ayudar sin importar la distancia.
-                </p>
-                <p>Contactenos para poder ayudarlo con total discresión y </p>
-                <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
-                    <a class="btn btn-success"
-                        href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
-                        target="_blank">¡Contactenos via WhatsApp!</a>
+        <section id="contacto" class="container-fluid bg-contact text-white">
+            <h3 class="text-center pt-5 m-0 text-uppercase ">Contacto</h3>
+            <div class="row p-5 ">
+                <div class="text-center col-12 col-md-6 p-0">
+                    <p>No importa en que ciudad o región te encuentres, estoy dispuesto a ayudar sin importar la
+                        distancia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi qui laboriosam
+                        sit dicta. Assumenda molestiae architecto nihil omnis eligendi sit corporis totam voluptates
+                        voluptas, natus expedita ex labore. Recusandae, suscipit!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="d-grid gap-2 col-12 col-md-6  mx-auto ">
+                        <a class="btn btn-success"
+                            href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
+                            target="_blank"> 
+                            <span>
+                                <i class="fa-brands fa-whatsapp">WhatsApp</i> 
+                            </span>
+                        <span>¡chatea con nosotros!</span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -280,22 +305,23 @@
             target="_blank"><img src="img/iconos/whatsapp.png" alt="icono whatsapp"></a>
     </div>
 
-    <footer class="row align-items-center justify-content-center text-center m-0">
-        <div class="col-3 small text-justify">
-            <p><b>advertencia:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse ipsum aperiam
-                quae omnis quaerat nesciunt, eius reiciendis, iste impedit et, enim perspiciatis! Porro deleniti vitae
-                quibusdam aliquam iste. Provident.</p>
-        </div>
-        <div class="col-3">
-            <h4 class="mb-3">Lorem, ipsum dolor sit</h4>
-            <a class="text-yellow translate" href="" data-bs-toggle="modal" data-bs-target="#terms" key="">politicas y
-                condiciones</a>
-        </div>
-        <div class="col-3">
-            <button class="btn bg-footer" id="up">ir arriba <i class="fa-solid fa-arrow-up"></i></button>
-        </div>
-        <div class="col-12 small bg-footer">
-            <span>todos los derechos reservados &copy; 2022</span>
+    <!-- pie de pagina -->
+    <footer class="container-fluid pt-5 bg-dark">
+        <div class="row align-items-center justify-content-center text-center small">
+            <div class="col-10 col-md-4 text-justify mb-3">
+                <p class="m-0"><b class="text-light">advertencia:</b> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ullam esse ipsum aperiam
+                    quae omnis quaerat nesciunt, eius reiciendis, iste impedit et, enim perspiciatis! Porro deleniti
+                    vitae
+                    quibusdam aliquam iste. Provident.</p>
+            </div>
+            <div class="col-10 col-md-4">
+                <a class="text-gray translate text-capitalize" href="" data-bs-toggle="modal" data-bs-target="#terms" key="">politicas y
+                    condiciones</a>
+            </div>
+            <div class="col-12 small text-muted mt-5">
+                <span>todos los derechos reservados &copy; 2022 | Desarrollado por ivn</span>
+            </div>
         </div>
     </footer>
 
