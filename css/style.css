@@ -10,6 +10,7 @@ header{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
     background-size: cover;
     background-image: url(../img/bg-inicio.jpg);
 }
@@ -55,6 +56,13 @@ header .btn:hover{
     background-image: url(../img/bg-container.jpg);
 }
 
+.bg-orange{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/bg-testimonios.jpg);
+}
+
 .bg-yellow{
     background-color: #c7f6d4;
 }
@@ -71,11 +79,6 @@ header .btn:hover{
     background-color: #000;
 }
 
-.bg-lang:hover{
-    background-color: #90c52d !important;
-    color: #fff;
-}
-
 .bg-green-dark{
     background-color: #008f6c;
 }
@@ -83,7 +86,7 @@ header .btn:hover{
 .service{
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/pareja.jpg);
     display: flex;
@@ -92,7 +95,7 @@ header .btn:hover{
 .service2{
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/limpieza.jpg);
     display: flex;
@@ -101,7 +104,7 @@ header .btn:hover{
 .service3{
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/brujeria.jpg);
     display: flex;
@@ -130,12 +133,11 @@ header .btn:hover{
 
 /* boton flotante */
 .btn-flotante img{
-    width: 50px;
+    width: 70px;
 }
 
 .btn-flotante:hover {
     transform: translateY(-7px);
-    text-shadow: #157070;
 }
 
 @media only screen and (max-width: 600px) {
@@ -155,6 +157,8 @@ header .btn:hover{
 }
 
 .message{
+    background-position: center;
+    background-size: cover;
     background-image: url(../img/bg-relleno.jpg);
     height: 20em;
     margin-bottom: 5em;
@@ -204,4 +208,13 @@ footer a:hover{
 
 .font-arial{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-whatsapp{
+    width: 40px;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.hover{
+    padding: 20px;
 }
