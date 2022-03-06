@@ -22,9 +22,9 @@
 </head>
 
 <body>
-    <header id="inicio">
+    <header id="home">
         <!-- menu de navegacion -->
-        <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-nav p-5 fixed">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-nav p-5">
             <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,17 +32,17 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
                 <ul class="navbar-nav me-2 mb-2 text-uppercase text-white" id="menu">
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#inicio" key="home">inicio</a>
+                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#home" key="home">inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#masters" key="about">sobre
+                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#about" key="about">sobre
                             nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#services"
+                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#services"
                             key="service">servicios</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="#testimonios"
+                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#testimony"
                             key="testimony">testimonios</a></li>
                     <li class="nav-item"><a class="nav-link translate text-white" href="" data-bs-toggle="modal"
                             data-bs-target="#terms" key="policy" id="btn-terms">politicas</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-green" href="#contacto"
+                    <li class="nav-item"><a class="nav-link translate text-green hide" href="#contact"
                             key="contact">contacto</a></li>
                 </ul>
                 <!-- cambio de idioma -->
@@ -76,9 +76,9 @@
         </div>
     </header>
 
-    <div class="bg-gray container-fluid p-0">
+    <div class="bg-gray container-fluid p-0 content">
         <!-- sobre los maestros -->
-        <section id="masters" class="py-5 container">
+        <section id="about" class="py-5 container">
             <h3 class="text-center pb-5 m-0 text-uppercase  translate" key="about-section">sobre nuestros maestros</h3>
             <div class="row mb-5 justify-content-around text-center">
                 <div class="col-12 col-md-6 col-lg-4 p-5">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 text-center p-5">
-                    <div class="service2">
+                    <div class="service2 rounded">
                         <h4 class="service-title text-white text-capitalize translate" key="service-2">limpiesas</h4>
                     </div>
                     <div class="service-text">
@@ -217,7 +217,7 @@
         </section>
 
         <!-- testimonios -->
-        <section id="testimonios" class="container-fluid p-5 bg-orange text-white">
+        <section id="testimony" class="container-fluid p-5 bg-orange text-white">
             <h3 class="text-center text-uppercase pb-5 m-0 translate" key="testimony">Testimonios</h3>
 
             <p class="pt-5 translate" key="testimony-text">
@@ -259,7 +259,7 @@
         </section>
 
         <!-- contacto -->
-        <section id="contacto" class="container-fluid bg-contact text-white">
+        <section id="contact" class="container-fluid bg-contact text-white">
             <h3 class="text-center pt-5 m-0 text-uppercase translate" key="contact">Contacto</h3>
             <div class="row p-5 ">
                 <div class="text-justify col-12 col-md-6 p-0">
