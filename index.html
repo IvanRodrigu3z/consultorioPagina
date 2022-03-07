@@ -261,8 +261,8 @@
         <!-- contacto -->
         <section id="contact" class="container-fluid bg-contact text-white">
             <h3 class="text-center pt-5 m-0 text-uppercase translate" key="contact">Contacto</h3>
-            <div class="row p-5 ">
-                <div class="text-justify col-12 col-md-6 p-0">
+            <div class="row p-5 justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6 p-0 texto-centrado">
                     <p class="translate" key="contact-text">No importa en que ciudad o región te encuentres, estoy
                         dispuesto a ayudar sin importar la
                         distancia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi qui laboriosam
@@ -270,14 +270,29 @@
                         voluptas, natus expedita ex labore. Recusandae, suscipit!
                     </p>
                 </div>
-                <div class="col-12 col-md-6 align-self-center">
-                    <div class="d-grid gap-2 col-12 col-md-6  mx-auto">
-                        <a class="btn btn-success py-3 rounded-pill text-center"
-                            href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
-                            target="_blank">
-                            <img src="/img/iconos/whatsapp-icon.png" alt="whatsapp icono" class="btn-whatsapp mx-3">
-                            <span class="text-uppercase translate" key="btn-wsp"> Escribenos al WhatsApp</span>
-                        </a>
+                <div class="col-12 col-md-10 col-lg-6 align-self-center px-5">
+                    <div class="row text-dark justify-content-center text-capitalize">
+                        <div class="col-12 col-md-9  bg-wsp text-center text-white py-3 contact-form-title p-3">
+                            <h4 class="translate" key="form-wsp-title">realiza tu consulta via WhatsApp</h4>
+                        </div>
+                        <form action="" class="col-12 col-md-9  bg-light p-4 contact-form-body">
+                            <div class="form-group mb-2">
+                                <label for="nombre" class="form-label text-dark translate" key="name">Nombre</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="form-gruup mb-3">
+                                <label for="message" class="translate" key="message">Mensaje</label>
+                                <textarea name="message" id="message" class="form-control text-area" ></textarea>
+                            </div>
+                            <div class=" bg-wsp d-grid gap-2 rounded">
+                                <a class="btn text-center writeus"
+                                    href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola, Nececito mas informacion!"
+                                    target="_blank">
+                                    <i class="fa-brands fa-whatsapp text-white"></i>
+                                    <span class="text-white translate" key="writeus"> continiar al chat</span>
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -295,49 +310,20 @@
                 </div>
                 <div class="modal-body px-5">
                     <div class="row">
-                        <div class="col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi consequatur
-                                praesentium, laborum sequi harum ratione, possimus eveniet ipsam voluptates molestias
-                                veniam ipsa? Distinctio beatae facilis et consectetur! Quas, alias. Lorem ipsum dolor
-                                sit amet consectetur adipisicing elit. Fugit iure aperiam modi non explicabo quo
-                                perspiciatis, ex laborum aliquid maxime molestias earum odit, nostrum tempore sunt,
-                                porro hic maiores nemo!</p>
+                        <div class="col-12 mb-3">
+                            <p>Este sitio web va dirigido exclusivamente a personas mayores de edad (18 años). De acuerdo con las legislaciones vigentes, se establece que los rituales que se ofrecen tienen fines de entretenimiento y ayuda personal. Estos servicios no sustituiran la debida atención médica, legal, financiera, psicológica y psiquiátrica. Todas las personas son diferentes, por lo tanto los resultados pueden variar de una persona a otra. Los resultados ante cada caso son probables y no existe evidencia científica o eficacia de los mismos.</p>
                         </div>
                         <div class="col-12 col-lg-4 text-center">
-                            <div>
-                                <i class="fa-thin fa-address-book"></i>
-                            </div>
-                            <h3>uso de datos</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum obcaecati facere
-                                suscipit itaque amet aperiam tempore deserunt dignissimos porro? Aut, nisi nesciunt?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid veniam consequatur
-                                dolore, nisi magni quo tempora tenetur exercitationem eum! Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Ducimus sunt expedita fugiat illo nam iste placeat harum
-                                maxime reprehenderit necessitatibus.</p>
+                            <h3>politicas de privacidad</h3>
+                            <p>El usuario declara que los datos que aquí se solicitan , son entregados de manera voluntaria con el único objetivo de ser usados para consulta. No recolectamos ningún tipo de información personal de tratamiento sensible: religiosa , privada y personal o financiera , el usuario podrá sustituir su nombre por seudónimos si así lo desea. La información que se le proporcione al usuario se hace bajo autorización del mismo y se emplea con fines de estudio en su caso.</p>
                         </div>
                         <div class="col-12 col-lg-4 text-center">
-                            <div>
-                                <i class="fa-thin fa-address-book"></i>
-                            </div>
-                            <h3>uso de datos</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum obcaecati facere
-                                suscipit itaque amet aperiam tempore deserunt dignissimos porro? Aut, nisi nesciunt?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid veniam consequatur
-                                dolore, nisi magni quo tempora tenetur exercitationem eum! Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Ducimus sunt expedita fugiat illo nam iste placeat harum
-                                maxime reprehenderit necessitatibus.</p>
+                            <h3>politicas de consulta</h3>
+                            <p>Las llamadas o mensajes de texto a cualquiera de los números de contacto , tienen costo y varían de acuerdo al operador de telefonía del usuario. Para mayor información sobre costos , puede consultar con su proveedor de servicio telefónico. El simple uso de este sitio web , no genera al usuario costos . Los costos que se puedan generar por llamadas , mensajes de texto o uso de aplicaciones como whatsapp , están sujetos a los costos por contratación de plan de servicios de cada usuario con su proveedor de servicio telefónico.</p>
                         </div>
                         <div class="col-12 col-lg-4 text-center">
-                            <div>
-                                <i class="fa-thin fa-address-book"></i>
-                            </div>
-                            <h3>uso de datos</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum obcaecati facere
-                                suscipit itaque amet aperiam tempore deserunt dignissimos porro? Aut, nisi nesciunt?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid veniam consequatur
-                                dolore, nisi magni quo tempora tenetur exercitationem eum! Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Ducimus sunt expedita fugiat illo nam iste placeat harum
-                                maxime reprehenderit necessitatibus.</p>
+                            <h3>politicas de navegacion</h3>
+                            <p>al navegar por este sitio web esta declarando que eseta de acuerdo con nuestra politicas, condiciones y servicios prestados a peticion del mismo se haran de manera voluntaria,considerando que cualquiera de los casos se establece que los actividades de hechizeria, videncias, magias y actividades esotericas son considerados actividades con fines de esparcimiento recreativo, ocio o entretenimiento </p>
                         </div>
                     </div>
                 </div>
@@ -352,7 +338,7 @@
     <div>
         <a class="btn-flotante"
             href="https://api.whatsapp.com/send?phone=+573146389721&text=Hola maestro, quiero realizar una consulta"
-            target="_blank"><img class="rounded-circle" src="img/iconos/whatsapp.ico" alt="icono whatsapp"></a>
+            target="_blank"><i class="fa-brands fa-whatsapp icono-wsp"></i></a>
     </div>
 
     <!-- pie de pagina -->

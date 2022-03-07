@@ -49,6 +49,22 @@ header .btn:hover{
     right: 40px;
     transition: all 300ms ease 0ms;
     z-index: 99;
+    border-radius: 50px;
+    background-color: #009929;
+}
+
+.icono-wsp{
+    text-align: center;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 8px 9px ;
+    color: #fff;
+}
+
+.text-area{
+    height: 70px;
+    max-height: 80px;
+    min-height: 70px;
 }
 
 /* backgorunds */
@@ -81,6 +97,10 @@ header .btn:hover{
 
 .bg-green-dark{
     background-color: #008f6c;
+}
+
+.bg-wsp{
+    background-color: #11792d;
 }
 
 .service{
@@ -139,16 +159,14 @@ header .btn:hover{
     background-size: cover;
     background-image: url(../img/bg-contact.jpg);
     width: 100%;
-    height: 25em;
+    height: auto;
 }
 
 /* boton flotante */
-.btn-flotante img{
-    width: 70px;
-}
 
 .btn-flotante:hover {
     transform: translateY(-7px);
+    box-shadow: 0px 0px 6px 6px #5ccb5f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,6 +174,14 @@ header .btn:hover{
         bottom: 20px;
         right: 20px;
     }
+}
+
+.contact-form-title{
+    border-radius: 20px 20px 0 0;
+}
+
+.contact-form-body{
+    border-radius: 0 0 20px 20px;
 }
 
 .parrafo{
@@ -202,6 +228,11 @@ footer a:hover{
     color: #b8b9b9 !important;
 }
 
+.texto-centrado{
+    display: flex;
+    align-items: center;
+}
+
 .fixed{
     position: fixed;
     width: 100%;
@@ -225,4 +256,8 @@ footer a:hover{
 
 .hover{
     padding: 20px;
+}
+
+.writeus:hover{
+    background-color: #37b33b;
 }

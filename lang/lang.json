@@ -37,8 +37,11 @@
         "warning-text" : "De acuerdo con las legislaciones vigentes todos los procedimientos realizados a través de este portal son con fines de ayuda y/o entretenimiento PERSONAL. Solo se puede hacer uso y acceder a este sitio web personas mayores de 18 años de edad",
         "p-c" : "politicas y condiciones",
         "copy" : "todos los derchos reservados | desarrollado por",
-        "btn-wsp" : "escribenos al WhatsApp"
-
+        "btn-wsp" : "escribenos al WhatsApp",
+        "form-wsp-title" : "Realiza tu consulta via AhatsApp",
+        "name" : "nombre",
+        "message" : "mensaje",
+        "writeus" : "continuar al chat"
     },
 
     "en":{
@@ -79,7 +82,11 @@
         "warning-text" : "In accordance with current legislation, all procedures carried out through this portal are for PERSONAL help and/or entertainment purposes. This website can only be used and accessed by people over 18 years of age.",
         "p-c" : "policies and conditions",
         "copy" : "all rights reserved | developed by",
-        "btn-wsp" : "¡write us on WhatsApp!"
+        "btn-wsp" : "¡write us on WhatsApp!",
+        "form-wsp-title" : "make your query via whatsapp",
+        "name" : "name",
+        "message" : "message",
+        "writeus" : "continue to chat"
     }
 
 }

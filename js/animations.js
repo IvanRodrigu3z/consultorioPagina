@@ -92,43 +92,6 @@ function positionElement(type, Element){
     return position;
 }
 
-
 function guiaMenu(scroll) { //indica en que seccion se encuentra al hacer scroll
-    let about = parseInt($('#about').offset().top);
-    let service = parseInt($('#services').offset().top);
-    let testimony = parseInt($('#testimony').offset().top);
-    let contact = parseInt($('#contact').offset().top);
-
-    let actual;
-    let hide = false;
-
-    if(scroll >= 13){
-        if(scroll >= about && scroll < service){
-            actual = "about";
-        }else{
-            hide = true;
-        }
-        if(scroll >= service && scroll < testimony){
-            actual = "services";
-        }else{
-            hide = true;
-        }
-        if(scroll >= testimony && scroll < contact){
-            actual = "testimony";
-        }else{
-            hide = true;
-        }
-        if(scroll >= contact && scroll){
-            actual = "contact";
-        }else{
-            hide = true;
-        }
-    }else{
-        actual = "home"
-    }
-    if(hide){
-        $('a[href*="#' + actual + '"]').addClass('text-gray');
-    }else{
-        $('a[href*="#' + actual + '"]').removeClass('text-gray');
-    }
+    
 }
