@@ -96,7 +96,7 @@ header .btn:hover{
 }
 
 .bg-green-dark{
-    background-color: #008f6c;
+    background-color: #59244b;
 }
 
 .bg-wsp{
@@ -284,10 +284,14 @@ footer a:hover{
 .wsp-message{
     position: fixed;
     bottom: 100px;
-    right: 120px;
+    right: 110px;
     transition: all 300ms ease 0ms;
     z-index: 99;
     width: 450px;
+}
+
+.wsp{
+    width: 10% !important;
 }
 
 .border-box{

@@ -127,7 +127,6 @@ function showServices(scroll){
     } else{
         $('#services').hide();
     }
-    console.log("scroll", scroll , "posicionServ" , showService)
 }
 
 function guiaMenu(scroll) { //indica en que seccion se encuentra al hacer scroll
