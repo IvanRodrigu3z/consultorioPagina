@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header id="home">
+    <header id="home" class="seccion">
         <!-- menu de navegacion -->
         <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-nav p-5">
             <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse"
@@ -32,21 +32,27 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
                 <ul class="navbar-nav me-2 mb-2 text-uppercase text-white" id="menu">
-                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#home" key="home">inicio</a>
+                    <li class="nav-item active" data-url="home">
+                        <a class="nav-link translate text-white hide active" href="#home" data-url="home" key="home">inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#about" key="about">sobre
-                            nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#services"
-                            key="service">servicios</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white hide" href="#testimony"
-                            key="testimony">testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-white" href="" data-bs-toggle="modal"
-                            data-bs-target="#terms" key="policy" id="btn-terms">politicas</a></li>
-                    <li class="nav-item"><a class="nav-link translate text-green hide" href="#contact"
-                            key="contact">contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link translate text-white hide" href="#about" data-url="about" key="about">sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translate text-white hide" href="#services" data-url="services   " key="services">servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translate text-white hide" href="#testimony" data-url="testimony" key="testimony">testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translate text-white hide" href="#contact" data-url="contact" key="contact">contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translate text-white" href="" data-url="policy" data-bs-toggle="modal" data-bs-target="#terms" key="policy" id="btn-terms">politicas</a>
+                    </li>
                 </ul>
                 <!-- cambio de idioma -->
-                <div class="mx-5 text-gray pb-2">
+                <div class="text-gray pb-2 lang">
                     <label for="lang"><i class="fa-solid fa-globe"></i></label>
                     <select id="lang" class="bg-transparent border-0 text-gray text-capitalize small w-auto">
                         <option value="en" id="en" class="translate bg-lang text-capitalize" key="lang-en">Ingles
@@ -78,7 +84,7 @@
 
     <div class="bg-gray container-fluid p-0 content">
         <!-- sobre los maestros -->
-        <section id="about" class="py-5 container">
+        <section id="about" class="py-5 container seccion">
             <h3 class="text-center pb-5 m-0 text-uppercase  translate" key="about-section">sobre nuestros maestros</h3>
             <div class="row mb-5 justify-content-around text-center">
                 <div class="col-12 col-md-6 col-lg-4 p-5">
@@ -162,14 +168,14 @@
         </section>
 
         <!-- servicios -->
-        <section id="services" class="bg-yellow container-fluid ">
+        <section id="services" class="bg-yellow container-fluid seccion">
             <h3 class="text-center py-5 m-0 text-uppercase translate" key="services">Servicios</h3>
             <div class="row justify-content-center m-0 pb-5">
-                <div class="col-12 col-md-6 col-lg-5 text-center p-3 hoverimg" id="1">
-                    <div class="service rounded hoverimg" id="service1">
+                <div class="col-12 col-md-6 col-lg-5 text-center p-0 m-2 " id="1">
+                    <div class="service rounded" id="service1">
                         <h4 class="service-title text-white text-capitalize translate" key="service-1">Amarres</h4>
                     </div>
-                    <div class="service-text text-lead">
+                    <div class="service-text text-lead border-dark">
                         <p class="translate" key="service-1-text">Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Commodi ab nihil
                             nam sint quasi iusto sapiente
@@ -177,8 +183,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-5 text-center p-3 hoverimg" id="2">
-                    <div class="service2 rounded hoverimg" id="service2">
+                <div class="col-12 col-md-5 col-lg-5 text-center p-0 m-2" id="2">
+                    <div class="service2 rounded" id="service2">
                         <h4 class="service-title text-white text-capitalize translate" key="service-2">limpiesas</h4>
                     </div>
                     <div class="service-text">
@@ -189,8 +195,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-5 text-center p-3 hoverimg" id="3">
-                    <div class="service3 hoverimg" id="service3">
+                <div class="col-12 col-md-5 col-lg-5 text-center p-0 m-2" id="3">
+                    <div class="service3" id="service3">
                         <h4 class="service-title text-white  text-capitalize translate" key="service-3">limpiesas</h4>
                     </div>
                     <div class="service-text">
@@ -201,8 +207,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-5 text-center p-3 hoverimg" id="4">
-                    <div class="service4 hoverimg" id="service4">
+                <div class="col-12 col-md-5 col-lg-5 text-center p-0 m-2" id="4">
+                    <div class="service4" id="service4">
                         <h4 class="service-title text-white text-capitalize translate" key="service-4">Brujeria</h4>
                     </div>
                     <div class="service-text">
@@ -217,7 +223,7 @@
         </section>
 
         <!-- testimonios -->
-        <section id="testimony" class="container-fluid p-5 bg-orange text-white">
+        <section id="testimony" class="container-fluid p-5 bg-orange text-white seccion">
             <h3 class="text-center text-uppercase pb-5 m-0 translate" key="testimony">Testimonios</h3>
 
             <p class="pt-5 translate" key="testimony-text">
@@ -259,7 +265,7 @@
         </section>
 
         <!-- contacto -->
-        <section id="contact" class="container-fluid bg-contact text-white">
+        <section id="contact" class="container-fluid bg-contact text-white seccion">
             <h3 class="text-center pt-5 m-0 text-uppercase translate" key="contact">Contacto</h3>
             <div class="row p-5 justify-content-center">
                 <div class="col-12 col-md-10 col-lg-6 p-0 texto-centrado">
@@ -282,13 +288,12 @@
                             </div>
                             <div class="form-gruup mb-3">
                                 <label for="message" class="translate" key="message">Mensaje</label>
-                                <textarea name="message" id="consult" class="form-control text-area" ></textarea>
+                                <textarea name="message" id="consult" class="form-control text-area"></textarea>
                             </div>
                             <div class=" bg-wsp d-grid gap-2 rounded">
-                                <a class="btn text-center writeus" id="btn-wsp"
-                                target="_blank" onclick="consultWsp()">
-                                <i class="fa-brands fa-whatsapp text-white"></i>
-                                <span class="text-white translate" key="writeus"> continiar al chat</span>
+                                <a class="btn text-center writeus" id="btn-wsp" target="_blank" onclick="consultWsp()">
+                                    <i class="fa-brands fa-whatsapp text-white"></i>
+                                    <span class="text-white translate" key="writeus"> continiar al chat</span>
                                 </a>
                             </div>
                         </form>
@@ -311,20 +316,38 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 text-center">
                             <h4 class="text-capitalize translate" key="policy1">condiciones de uso</h4>
-                            <p class="translate" key="policy-1-text">Este sitio web va dirigido exclusivamente a personas mayores de edad (18 años). De acuerdo con las legislaciones vigentes, se establece que los rituales que se ofrecen tienen fines de entretenimiento y ayuda personal. Estos servicios no sustituiran la debida atención médica, legal, financiera, psicológica y psiquiátrica. Todas las personas son diferentes, por lo tanto los resultados pueden variar de una persona a otra. Los resultados ante cada caso son probables y no existe evidencia científica o eficacia de los mismos.</p>
+                            <p class="translate" key="policy-1-text">Este sitio web va dirigido exclusivamente a
+                                personas mayores de edad (18 años). De acuerdo con las legislaciones vigentes, se
+                                establece que los rituales que se ofrecen tienen fines de entretenimiento y ayuda
+                                personal. Estos servicios no sustituiran la debida atención médica, legal, financiera,
+                                psicológica y psiquiátrica. Todas las personas son diferentes, por lo tanto los
+                                resultados pueden variar de una persona a otra. Los resultados ante cada caso son
+                                probables y no existe evidencia científica o eficacia de los mismos.</p>
                         </div>
                         <div class="col-12 col-lg-4 text-center">
                             <h4 class="text-capitalize translate" key="policy2">politicas de privacidad</h4>
-                            <p class="translate" key="policy-2-text">El usuario declara que los datos que aquí se solicitan , son entregados de manera voluntaria con el único objetivo de ser usados para consulta. No recolectamos ningún tipo de información personal de tratamiento sensible: religiosa , privada y personal o financiera , el usuario podrá sustituir su nombre por seudónimos si así lo desea. La información que se le proporcione al usuario se hace bajo autorización del mismo y se emplea con fines de estudio en su caso.</p>
+                            <p class="translate" key="policy-2-text">El usuario declara que los datos que aquí se
+                                solicitan , son entregados de manera voluntaria con el único objetivo de ser usados para
+                                consulta. No recolectamos ningún tipo de información personal de tratamiento sensible:
+                                religiosa , privada y personal o financiera , el usuario podrá sustituir su nombre por
+                                seudónimos si así lo desea. La información que se le proporcione al usuario se hace bajo
+                                autorización del mismo y se emplea con fines de estudio en su caso.</p>
                         </div>
                         <div class="col-12 col-lg-4 text-center">
                             <h4 class="text-capitalize translate" key="policy3">politicas de consulta</h4>
-                            <p class="translate" key="policy-3-text">Las llamadas o mensajes de texto a cualquiera de los números de contacto , tienen costo y varían de acuerdo al operador de telefonía del usuario. Para mayor información sobre costos , puede consultar con su proveedor de servicio telefónico. El simple uso de este sitio web , no genera al usuario costos . Los costos que se puedan generar por llamadas , mensajes de texto o uso de aplicaciones como whatsapp , están sujetos a los costos por contratación de plan de servicios de cada usuario con su proveedor de servicio telefónico.</p>
+                            <p class="translate" key="policy-3-text">Las llamadas o mensajes de texto a cualquiera de
+                                los números de contacto , tienen costo y varían de acuerdo al operador de telefonía del
+                                usuario. Para mayor información sobre costos , puede consultar con su proveedor de
+                                servicio telefónico. El simple uso de este sitio web , no genera al usuario costos . Los
+                                costos que se puedan generar por llamadas , mensajes de texto o uso de aplicaciones como
+                                whatsapp , están sujetos a los costos por contratación de plan de servicios de cada
+                                usuario con su proveedor de servicio telefónico.</p>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light translate" key="btn-close" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-light translate" key="btn-close"
+                        data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -332,19 +355,17 @@
 
     <!-- boton flotante de whatsapp-->
     <div>
-        <div class="wsp">
-            <div class="row wsp-message m-0 small">
-                <div class="col-12 bg-success p-3 text-white border-box">
-                    <h5 class="m-0 px-3">WhatsApp</h5>
-                </div>
-                <div class="col-12 m-0 message-wsp border-box-message p-0">
-                    <div class="row p-3 m-0 justify-content-around">
-                        <div class="col-2 p-0">
-                            <img src="/img/iconos/logo.ico" alt="logo" class="wsp-perfil">
-                        </div>
-                        <div class="col-10 bg-white texto-centrado border-message px-4">
-                            <p class="m-0 translate p-0" key="wsp-message">Hola, en que podemos ayudarte?</p>
-                        </div>
+        <div class="row wsp-message m-0 wsp">
+            <div class="col-12 bg-success px-4 text-white border-box">
+                <h5 class="m-0 py-3">WhatsApp</h5>
+            </div>
+            <div class="col-12 m-0 message-wsp border-box-message p-0">
+                <div class="row p-3 m-0 justify-content-around">
+                    <div class="col-2 p-0">
+                        <img src="/img/iconos/logo.ico" alt="logo" class=" img-fluid">
+                    </div>
+                    <div class="col-9 bg-white texto-centrado border-message">
+                        <p class="m-0 translate p-0 small" key="wsp-message">Hola, en que podemos ayudarte?</p>
                     </div>
                 </div>
             </div>
@@ -387,7 +408,7 @@
 
     <script src="js/translate.js"></script>
     <script src="js/animations.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 
 </html>

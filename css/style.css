@@ -84,7 +84,7 @@ header .btn:hover{
 }
 
 .bg-nav{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .bg-footer{
@@ -141,13 +141,9 @@ header .btn:hover{
     align-items: center;
 }
 
-.service:hover{
-    background-color: rgba(143, 32, 32, 0.8);
-    border: 1px solid #009929;
-}
-
-hoverimg:hover{
-    background-color: rgba(209, 209, 32, 0.5);
+.hoverimg:hover{
+    background-color: rgba(209, 201, 201, 0.7);
+    color: #fff !important;
 }
 
 .service-title{
@@ -180,12 +176,6 @@ hoverimg:hover{
     box-shadow: 0px 0px 6px 6px #5ccb5f;
 }
 
-@media only screen and (max-width: 600px) {
-    .btn-flotante {
-        bottom: 20px;
-        right: 20px;
-    }
-}
 
 .contact-form-title{
     border-radius: 20px 20px 0 0;
@@ -227,8 +217,8 @@ footer a:hover{
     color: #ebf3d7;
 }
 
-.text-green{
-    color: #009929 !important;
+.active{
+    color: #35ac53 !important;
 }
 
 .text-green:hover{
@@ -248,7 +238,8 @@ footer a:hover{
     position: fixed;
     width: 100%;
     padding: 1em !important;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.9);
+    transition: all ease .5s;
 }
 
 .logo-dev{
@@ -277,9 +268,6 @@ footer a:hover{
     background-size: cover;
     background-image: url(/img/bg-wsp.jpg);
 }
-.wsp-perfil{
-    width: 60px;
-}
 
 .wsp-message{
     position: fixed;
@@ -291,7 +279,7 @@ footer a:hover{
 }
 
 .wsp{
-    width: 10% !important;
+    width: 20em !important;
 }
 
 .border-box{
@@ -304,4 +292,37 @@ footer a:hover{
 
 .border-message{
     border-radius: 30px 30px 30px 0;
+}
+
+.lang{
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 990px) {
+    
+    .lang{
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .wsp-message{
+        bottom: 90px;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .wsp{
+        width: 15em !important;
+    }
+
+    .message{
+        height: 30em;
+    }
 }

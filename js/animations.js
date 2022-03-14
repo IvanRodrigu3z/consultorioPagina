@@ -1,8 +1,8 @@
 $(document).ready(function () {
     menuAnimate();
     imgAnimate();
-    imgHover();
-    showMessageWsp()
+    //imgHover();
+    showMessageWsp();
 });
 
 function menuAnimate() { //redirecciona al contenido mediante en menú
@@ -14,7 +14,7 @@ function menuAnimate() { //redirecciona al contenido mediante en menú
         if (destino.length == 0) {
             destino = $('html');
         }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+        $('html, body').animate({ scrollTop: destino.offset().top }, 600);
         return false;
     });
 }
@@ -37,14 +37,6 @@ function imgHover() {
     });
 }
 
-// function shadowWspBtn(){
-//     setTimeout(() => {
-//         $('.btn-flotante').setInterval(function(){
-//             $('.btn-flotante').addClass('shadow-wsp')
-//         }, 500);
-//     }, 5000);
-// }
-
 function showMessageWsp(){
     $('.wsp-message').hide();
     $('.btn-flotante').hover(function(){
@@ -60,32 +52,31 @@ $(window).scroll(function (event) {
     let idElement = event.target.id;
 
     fixedMenu(scroll);
-    guiaMenu(scroll);
     showPhotoMaster(scroll);
-    slideMessage(scroll);
-    showServices(scroll);
+    //slideMessage(scroll);
 });
 
 function fixedMenu(scroll) { //menu fijo
+
     let nav = $('.navbar');
     if (scroll > 13) {
-        nav.animate({ padding: '0' }, 1000);
         nav.addClass('fixed');
-        nav.removeClass('p-5');
     } else {
-        nav.addClass('p-5');
         nav.removeClass("fixed");
     }
 
     hideMenu();
 }
 
-function hideMenu() { //oculta el menu en resoluciones pequeñas
+function hideMenu() { //oculta el menu que se desspliega en resoluciones pequeñas
     let width = $(window).width();
     let hide = $('.hide');
     if (width <= 973) {
         hide.attr('data-bs-toggle', 'collapse');
         hide.attr('data-bs-target', '#menuNavegacion');
+        $('.lang').css({
+            margin : '0'
+        })
     }
 }
 
@@ -115,20 +106,4 @@ function positionElement(type, Element) {
         position = parseInt($('#' + Element).offset().top);
     }
     return position;
-}
-
-function showServices(scroll){
-    let hight = $(window).height();
-    let service = positionElement("id", "services");
-    let showService = service - hight;
-    $('#services').hide();
-    if(scroll > showService){
-        $('#services').show();
-    } else{
-        $('#services').hide();
-    }
-}
-
-function guiaMenu(scroll) { //indica en que seccion se encuentra al hacer scroll
-
 }
