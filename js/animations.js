@@ -78,7 +78,7 @@ function showPhotoMaster(scroll) { //animaciones en las fotos de "about"
     }
 }
 
-function slideMessage(scroll) { //Desliza el mensaje de relleno
+function slideMessage(scroll) { //muestrq el mensaje de relleno
     let startSlide = positionElement("class", "ultimo");
     if (scroll > startSlide) {
         $('.message').fadeIn('slow')
