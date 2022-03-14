@@ -17,8 +17,8 @@ addEventListener('DOMContentLoaded', () =>  {  //guia de menu al hacer scroll
     const funcionObserver = entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting){
-                const seccionActual = Array.from(MENU_ITEMS).find(item => item.dataset.url === entry.target.id)
-                seccionActual.classList.add('active')
+                const seccionActual = Array.from(MENU_ITEMS).find(item => item.dataset.url === entry.target.id);
+                seccionActual.classList.add('active');
                 for(const item  of MENU_ITEMS){
                     if(item != seccionActual){
                         item.classList.remove('active');

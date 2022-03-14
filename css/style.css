@@ -127,7 +127,12 @@ header .btn:hover{
 }
 
 .service-text{
+    padding: 2px 15px;
     color: #000;
+}
+
+.h-serv:hover{
+    background-color: rgba(160, 160, 160, 0.7);
 }
 
 .bg-contact{
@@ -270,6 +275,10 @@ footer a:hover{
     padding: 0 30px;
 }
 
+.p-contact{
+    padding: 1em 2em;
+}
+
 @media only screen and (max-width: 990px) {
     
     .lang{
@@ -286,6 +295,13 @@ footer a:hover{
     .wsp-message{
         bottom: 90px;
         right: 30px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .p-contact{
+        
+        padding: 0;
     }
 }
 
