@@ -1,7 +1,6 @@
 $(document).ready(function () {
     menuAnimate();
     imgAnimate();
-    //imgHover();
     showMessageWsp();
 });
 
@@ -28,15 +27,6 @@ function imgAnimate() { //maximiza la imagen al pasar el mouse encima
     });
 }
 
-function imgHover() {
-    $('.hoverimg').hover(function (event) {
-        id = event.target.id
-        $('#' + id).fadeIn();
-    }, function () {
-        $('#' + id).animate({ padding: '20px' }, 200);
-    });
-}
-
 function showMessageWsp(){
     $('.wsp-message').hide();
     $('.btn-flotante').hover(function(){
@@ -53,7 +43,7 @@ $(window).scroll(function (event) {
 
     fixedMenu(scroll);
     showPhotoMaster(scroll);
-    //slideMessage(scroll);
+    slideMessage(scroll);
 });
 
 function fixedMenu(scroll) { //menu fijo
@@ -90,11 +80,10 @@ function showPhotoMaster(scroll) { //animaciones en las fotos de "about"
 
 function slideMessage(scroll) { //Desliza el mensaje de relleno
     let startSlide = positionElement("class", "ultimo");
-    $('.message').width('50%');
     if (scroll > startSlide) {
-        $('.message').animate({ width: '100%' }, 400);
+        $('.message').fadeIn('slow')
     } else {
-        $('.message').width('50%');
+        $('.message').fadeOut();
     }
 }
 

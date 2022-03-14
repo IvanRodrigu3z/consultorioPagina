@@ -23,24 +23,12 @@ ul li a.text-white:hover{
     color: #b9bdbd !important;
 }
 
-ul li a.text-orange:hover{
-    color: #ffc340 !important;
-}
-
 header .btn{
     background-color: #009929;
 }
 
 header .btn:hover{
     background-color: #5ccb5f;
-}
-
-.navbr{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #353636;
 }
 
 .btn-flotante {
@@ -79,7 +67,7 @@ header .btn:hover{
     background-image: url(../img/bg-testimonios.jpg);
 }
 
-.bg-yellow{
+.bg-serv{
     background-color: #e5dde6;
 }
 
@@ -87,15 +75,11 @@ header .btn:hover{
     background-color: rgba(0,0,0,0.7);
 }
 
-.bg-footer{
+.bg-black{
     background-color: #000;
 }
 
-.bg-lang{
-    background-color: #000;
-}
-
-.bg-green-dark{
+.bg-purple{
     background-color: #59244b;
 }
 
@@ -105,7 +89,6 @@ header .btn:hover{
 
 .service{
     width: 100%;
-    height: 200px;
     background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/pareja.jpg);
@@ -114,7 +97,6 @@ header .btn:hover{
 }
 .service2{
     width: 100%;
-    height: 200px;
     background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/limpieza.jpg);
@@ -123,7 +105,6 @@ header .btn:hover{
 }
 .service3{
     width: 100%;
-    height: 200px;
     background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/alejamiento.jpg);
@@ -133,7 +114,6 @@ header .btn:hover{
 
 .service4{
     width: 100%;
-    height: 200px;
     background-position: center;
     background-size: cover;
     background-image: url(../img/servicios/pareja-2.jpg);
@@ -141,19 +121,12 @@ header .btn:hover{
     align-items: center;
 }
 
-.hoverimg:hover{
-    background-color: rgba(209, 201, 201, 0.7);
-    color: #fff !important;
-}
-
 .service-title{
-    background-color:rgba(12, 12, 11, 0.5);
     width: 100%;
-    padding: 1em;
+    padding: 3em;
 }
 
 .service-text{
-    padding:0 20px;
     color: #000;
 }
 
@@ -175,7 +148,6 @@ header .btn:hover{
 .shadow-wsp{
     box-shadow: 0px 0px 6px 6px #5ccb5f;
 }
-
 
 .contact-form-title{
     border-radius: 20px 20px 0 0;
