@@ -15,6 +15,10 @@ header{
     background-image: url(../img/bg-inicio.jpg);
 }
 
+header .row p{
+    font-size:large;
+}
+
 .font-playfair{
     font-family: 'Playfair Display SC', serif;
 }

@@ -5,7 +5,7 @@ function consultWsp(){
     let message = document.getElementById('consult').value;
     
     if(name != "" && message != ""){
-        document.getElementById('btn-wsp').setAttribute('href', linkWsp + "Hola, mi nombre es" + name + ", quisiera consultar sobre. " + message);
+        document.getElementById('btn-wsp').setAttribute('href', linkWsp + "Hola, mi nombre es " + name + ", quisiera consultar sobre: " + message);
     }else{
         document.getElementById('btn-wsp').setAttribute('href', linkWsp + "Quiero realizar una consulta");
     }
